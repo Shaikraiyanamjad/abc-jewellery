@@ -1,0 +1,640 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>jewellery</title>
+</head>
+
+<body class="bg-[#f6f4f2]">
+    <!-- navbar start -->
+   <section class="w-full bg-[#f8f6f3] shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="text-2xl font-serif italic text-[#d4a98b]">
+      Abc Jewelry
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <a href="#" class="hover:text-[#d4a98b] transition">Trending</a>
+      <a href="#" class="hover:text-[#d4a98b] transition">Collection</a>
+      <a href="#" class="hover:text-[#d4a98b] transition">Testimonials</a>
+      <a href="#" class="hover:text-[#d4a98b] transition">Contact Us</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-[#f8f6f3] border-t border-gray-200">
+    <nav class="flex flex-col space-y-3 px-6 py-4 text-gray-700 font-medium">
+      <a href="#" class="hover:text-[#d4a98b] transition">Trending</a>
+      <a href="#" class="hover:text-[#d4a98b] transition">Collection</a>
+      <a href="#" class="hover:text-[#d4a98b] transition">Testimonials</a>
+      <a href="#" class="hover:text-[#d4a98b] transition">Contact Us</a>
+    </nav>
+  </div>
+</section>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <section class="bg-[#f8f6f3] flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-16">
+        <!-- Left Content -->
+        <div class="md:w-1/2 space-y-4 text-center md:text-left">
+            <p class="text-sm tracking-widest text-[#d3a48a] uppercase font-medium">Jewelry</p>
+            <h1 class="text-5xl md:text-6xl font-serif text-[#1a2b3c] leading-tight">
+                Shine Bright <br /> With abc jewellery<span class="text-[#d3a48a]">.</span>
+            </h1>
+            <p class="text-[#6c757d] italic">
+                Every day is your special day with our fine jewelry!
+            </p>
+            <button class="bg-[#e3bba6] hover:bg-[#d3a48a] text-white px-8 py-3 rounded-md transition-all duration-300">
+                — Shop
+            </button>
+        </div>
+
+        <!-- Right Image -->
+        <div class="md:w-1/2 relative mt-10 md:mt-0">
+            <div class="absolute inset-0 bg-[#f8f6f3] rounded-l-full md:w-[70%] right-0"></div>
+            <img src="./images/hero.jpg" alt="abc jewellery Jewelry Model"
+                class="relative z-10 rounded-full object-cover w-full h-auto" />
+        </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- about us section start -->
+     <section class="py-20 px-8 lg:px-24 xl:px-36">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+    
+    <!-- Image Section -->
+    <div class="md:w-1/2 relative">
+      <div class="absolute -bottom-6 -right-6 bg-[#f8f6f3] w-full h-full rounded-3xl -z-10"></div>
+      <img src="./images/img1.jpg" alt="Our Craftsmanship" 
+        class="rounded-3xl object-cover w-full h-[420px] shadow-md">
+    </div>
+
+    <!-- Text Section -->
+    <div class="md:w-1/2 space-y-6 text-center md:text-left">
+      <p class="text-sm tracking-widest uppercase text-[#d3a48a] font-medium">
+        Our Story
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-serif text-[#1a2b3c] leading-tight">
+        Crafted With <span class="text-[#d3a48a]">Passion</span> &amp; Precision
+      </h2>
+      <p class="text-[#6c757d] leading-relaxed text-base">
+        At abc jewellery, every piece of jewelry tells a story — your story. 
+        We blend timeless artistry with modern elegance to create designs 
+        that reflect who you truly are. From delicate everyday pieces to 
+        grand statements, our creations are made with love, precision, 
+        and the finest materials.
+      </p>
+      <p class="text-[#6c757d] leading-relaxed text-base">
+        Our mission is simple — to make you feel confident, beautiful, 
+        and effortlessly radiant every single day.
+      </p>
+
+      <button
+        class="bg-[#e3bba6] hover:bg-[#d3a48a] text-white px-8 py-3 rounded-md transition-all duration-300 shadow-sm">
+        Learn More
+      </button>
+    </div>
+
+  </div>
+</section>
+    <!-- about us section end -->
+
+    <!-- featured products section start -->
+     <section class="bg-[#f8f6f3] py-16">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <!-- Item 1 -->
+      <div class="flex flex-col items-center">
+        <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#f5eae1] border-2 border-[#f2ddd3] mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[#d4a98b]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M12 2l9 4.5v9L12 20.5 3 15.5v-9L12 2z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-serif text-[#1d2b36] mb-2">Gems and Natural Stones</h3>
+        <div class="w-10 h-[1px] bg-gray-300 mb-4"></div>
+        <p class="text-gray-600 leading-relaxed max-w-xs">
+          We use precious and semi-precious stones: diamonds, emeralds, sapphires, etc. and also work with Swarovski crystals.
+        </p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="flex flex-col items-center">
+        <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#f5eae1] border-2 border-[#f2ddd3] mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[#d4a98b]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M12 12a5 5 0 100-10 5 5 0 000 10zM12 14v8m-4 0h8" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-serif text-[#1d2b36] mb-2">585 Gold</h3>
+        <div class="w-10 h-[1px] bg-gray-300 mb-4"></div>
+        <p class="text-gray-600 leading-relaxed max-w-xs">
+          Our fine jewelry will never darken or wear off. With proper care, you can wear it for 50+ years and pass it to your heirs!
+        </p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="flex flex-col items-center">
+        <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#f5eae1] border-2 border-[#f2ddd3] mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[#d4a98b]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-serif text-[#1d2b36] mb-2">Designer Collections</h3>
+        <div class="w-10 h-[1px] bg-gray-300 mb-4"></div>
+        <p class="text-gray-600 leading-relaxed max-w-xs">
+          We create exquisite fine jewelry. Each collection has a soul and a certain message that resonates in the hearts of our customers.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- featured products section end -->
+
+    <!-- products section start -->
+     <section class="bg-[#f8f6f3] py-20 px-6 md:px-12 lg:px-20">
+  <div class="max-w-7xl mx-auto text-center mb-14">
+    <p class="text-sm tracking-widest uppercase text-[#d3a48a] font-medium mb-2">Our Collection</p>
+    <h2 class="text-4xl md:text-5xl font-serif text-[#1a2b3c] mb-4">
+      Discover the <span class="text-[#d3a48a]">Elegance</span> of ABC Jewellery
+    </h2>
+    <p class="text-[#6c757d] max-w-2xl mx-auto">
+      Explore our handcrafted designs — each piece is a symbol of beauty, grace, and timeless craftsmanship.
+    </p>
+  </div>
+
+  <!-- Product Grid -->
+  <div id="product-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto transition-all duration-500">
+
+    <!-- Product Card 1 -->
+    <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 group">
+      <div class="overflow-hidden">
+        <img src="./images/img3.jpg" alt="Gold Necklace"
+          class="w-full h-[340px] object-cover group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-serif text-[#1a2b3c] mb-2">Royal Gold Necklace</h3>
+        <p class="text-[#6c757d] text-sm mb-4">Handcrafted 22K gold with intricate detailing</p>
+        <button
+          class="bg-[#e3bba6] hover:bg-[#d3a48a] text-white px-6 py-2 rounded-md transition-all duration-300">View
+          Details</button>
+      </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 group">
+      <div class="overflow-hidden">
+        <img src="./images/img6.jpg" alt="Diamond Earrings"
+          class="w-full h-[340px] object-cover group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-serif text-[#1a2b3c] mb-2">Radiant Diamond Earrings</h3>
+        <p class="text-[#6c757d] text-sm mb-4">Sparkling diamonds set in fine gold</p>
+        <button
+          class="bg-[#e3bba6] hover:bg-[#d3a48a] text-white px-6 py-2 rounded-md transition-all duration-300">View
+          Details</button>
+      </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 group">
+      <div class="overflow-hidden">
+        <img src="./images/img8.jpg" alt="Pearl Bracelet"
+          class="w-full h-[340px] object-cover group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-serif text-[#1a2b3c] mb-2">Pearl Grace Bracelet</h3>
+        <p class="text-[#6c757d] text-sm mb-4">Elegant freshwater pearls with gold clasp</p>
+        <button
+          class="bg-[#e3bba6] hover:bg-[#d3a48a] text-white px-6 py-2 rounded-md transition-all duration-300">View
+          Details</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden Products (Initially Hidden) -->
+  <div id="extra-products"
+    class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto mt-10 hidden opacity-0 translate-y-10 transition-all duration-700">
+
+    <!-- Product Card 4 -->
+    <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 group">
+      <div class="overflow-hidden">
+        <img src="./images/img22.jpg" alt="Emerald Necklace"
+          class="w-full h-[340px] object-cover group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-serif text-[#1a2b3c] mb-2">Emerald Harmony Necklace</h3>
+        <p class="text-[#6c757d] text-sm mb-4">Emeralds set in 18K gold with artistic detailing</p>
+        <button
+          class="bg-[#e3bba6] hover:bg-[#d3a48a] text-white px-6 py-2 rounded-md transition-all duration-300">View
+          Details</button>
+      </div>
+    </div>
+
+    <!-- Product Card 5 -->
+    <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 group">
+      <div class="overflow-hidden">
+        <img src="./images/img7.jpg" alt="Ruby Earrings"
+          class="w-full h-[340px] object-cover group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-serif text-[#1a2b3c] mb-2">Crimson Ruby Earrings</h3>
+        <p class="text-[#6c757d] text-sm mb-4">Luxurious rubies framed with diamonds</p>
+        <button
+          class="bg-[#e3bba6] hover:bg-[#d3a48a] text-white px-6 py-2 rounded-md transition-all duration-300">View
+          Details</button>
+      </div>
+    </div>
+
+    <!-- Product Card 6 -->
+    <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 group">
+      <div class="overflow-hidden">
+        <img src="./images/img15.jpg" alt="Gold Ring"
+          class="w-full h-[340px] object-cover group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="p-6 text-center">
+        <h3 class="text-xl font-serif text-[#1a2b3c] mb-2">Golden Glow Ring</h3>
+        <p class="text-[#6c757d] text-sm mb-4">Classic ring crafted from 22K gold</p>
+        <button
+          class="bg-[#e3bba6] hover:bg-[#d3a48a] text-white px-6 py-2 rounded-md transition-all duration-300">View
+          Details</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button -->
+  <div class="text-center mt-14">
+    <button id="viewMoreBtn"
+      class="bg-[#1a2b3c] hover:bg-[#2c3e50] text-white px-10 py-4 rounded-md transition-all duration-300">
+      View Full Collection
+    </button>
+  </div>
+</section>
+    <!-- products section end -->
+
+    <!-- youth section start -->
+    <section class="bg-[#f8f6f3] flex flex-col-reverse md:flex-row items-center justify-between px-8 md:px-20 py-20">
+  <!-- Left Content -->
+  <div class="md:w-1/2 space-y-5 text-center md:text-left mt-10 md:mt-0">
+    <p class="text-sm tracking-widest uppercase text-[#d3a48a] font-medium">Collection</p>
+    <h2 class="text-5xl md:text-6xl font-serif text-[#1a2b3c] leading-tight">
+      Our Youth <br /> Collection on <br /> Sale Now<span class="text-[#d3a48a]">.</span>
+    </h2>
+    <p class="italic text-[#6c757d]">
+      from <span class="text-[#d3a48a]">$199</span> | shop the <span class="text-[#bfaea1] italic">limited</span> edition
+    </p>
+    <p class="text-[#6c757d] max-w-md mx-auto md:mx-0">
+      This collection was created while thinking about youth and purity. Trendy gold chains in bracelets and
+      necklaces look very delicate. The entire collection is very light, airy, and is a great fit for any occasion.
+    </p>
+    <button
+      class="bg-[#e3bba6] hover:bg-[#d3a48a] text-white px-8 py-3 rounded-md mt-4 transition-all duration-300">
+      — Discover the collection
+    </button>
+  </div>
+
+  <!-- Right Image -->
+  <div class="md:w-1/2 relative flex justify-center items-center">
+    <!-- Background Layer -->
+    <div class="absolute top-10 left-10 w-[85%] h-[85%] bg-[#f0e9e5] -z-10 rounded-sm"></div>
+    <img src="./images/img21.jpg" alt="Youth Collection Jewelry"
+      class="w-[80%] md:w-[70%] rounded-sm shadow-md object-cover" />
+  </div>
+</section>
+    <!-- youth section end -->
+
+    <!-- blog section start -->
+    <section class="bg-[#f8f6f3] py-20 px-6 md:px-20">
+  <!-- Section Header -->
+  <div class="text-center mb-14">
+    <p class="text-sm uppercase tracking-widest text-[#d3a48a] font-medium">Our Journal</p>
+    <h2 class="text-5xl md:text-6xl font-serif text-[#1a2b3c] leading-tight mb-4">
+      From Our <span class="text-[#d3a48a]">Blog</span>
+    </h2>
+    <p class="text-[#6c757d] max-w-2xl mx-auto">
+      Discover the stories, craftsmanship, and inspiration behind our timeless jewellery pieces.  
+      Read more about what makes every collection special.
+    </p>
+  </div>
+
+  <!-- Blog Cards -->
+  <div class="grid md:grid-cols-3 gap-10">
+    <!-- Blog 1 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+      <img src="./images/img12.jpg" alt="Design Inspiration"
+        class="w-full h-64 object-cover" />
+      <div class="p-6 space-y-3">
+        <p class="text-xs uppercase tracking-widest text-[#d3a48a]">Design</p>
+        <h3 class="text-xl font-serif text-[#1a2b3c]">The Art of Crafting Modern Gold Elegance</h3>
+        <p class="text-[#6c757d] text-sm">
+          Go behind the scenes of how our artisans bring life to delicate gold jewellery, blending tradition with modern trends.
+        </p>
+        <a href="#" class="inline-block text-[#d3a48a] hover:text-[#b68a6b] font-medium mt-2">Read More →</a>
+      </div>
+    </div>
+
+    <!-- Blog 2 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+      <img src="./images/img14.jpg" alt="Trend Spotlight"
+        class="w-full h-64 object-cover" />
+      <div class="p-6 space-y-3">
+        <p class="text-xs uppercase tracking-widest text-[#d3a48a]">Trends</p>
+        <h3 class="text-xl font-serif text-[#1a2b3c]">Why Minimal Jewellery Is the New Statement</h3>
+        <p class="text-[#6c757d] text-sm">
+          Learn why simple designs are becoming the most powerful fashion statement in luxury accessories today.
+        </p>
+        <a href="#" class="inline-block text-[#d3a48a] hover:text-[#b68a6b] font-medium mt-2">Read More →</a>
+      </div>
+    </div>
+
+    <!-- Blog 3 -->
+    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+      <img src="./images/img26.jpg" alt="Care Tips"
+        class="w-full h-64 object-cover" />
+      <div class="p-6 space-y-3">
+        <p class="text-xs uppercase tracking-widest text-[#d3a48a]">Care</p>
+        <h3 class="text-xl font-serif text-[#1a2b3c]">How to Keep Your Jewellery Forever Gleaming</h3>
+        <p class="text-[#6c757d] text-sm">
+          Simple expert tips to keep your gold, silver, and diamond pieces shining like the day you bought them.
+        </p>
+        <a href="#" class="inline-block text-[#d3a48a] hover:text-[#b68a6b] font-medium mt-2">Read More →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- View All Button -->
+  <div class="text-center mt-12">
+    <button
+      class="bg-[#e3bba6] hover:bg-[#d3a48a] text-white px-10 py-3 rounded-md transition-all duration-300">
+      — View All Articles
+    </button>
+  </div>
+</section>
+   <!-- blog section end  -->
+
+   <!-- testimonial start  -->
+    <section class="bg-[#f8f6f3] py-20 px-6 md:px-20">
+  <!-- Header -->
+  <div class="text-center mb-16">
+    <p class="text-sm uppercase tracking-widest text-[#d3a48a] font-medium">Testimonials</p>
+    <h2 class="text-5xl md:text-6xl font-serif text-[#1a2b3c] leading-tight mb-4">
+      What Our <span class="text-[#d3a48a]">Clients</span> Say
+    </h2>
+    <p class="text-[#6c757d] max-w-2xl mx-auto">
+      Our jewellery is more than just design — it’s a reflection of emotions, celebrations, and timeless memories.  
+      Hear what our valued customers have to say.
+    </p>
+  </div>
+
+  <!-- Testimonials Grid -->
+  <div class="grid md:grid-cols-3 gap-10">
+    <!-- Testimonial 1 -->
+    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300">
+      <div class="mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#d3a48a" viewBox="0 0 24 24" class="w-10 h-10">
+          <path d="M7.17 6A5.17 5.17 0 002 11.17V18h7v-6H6.17A2.17 2.17 0 018 9.83V6h-.83zM18.83 6A5.17 5.17 0 0013 11.17V18h7v-6h-2.83A2.17 2.17 0 0118 9.83V6h.83z" />
+        </svg>
+      </div>
+      <p class="text-[#1a2b3c] italic text-lg leading-relaxed">
+        “The craftsmanship is absolutely stunning! I bought a gold bracelet from ABC Jewellery,  
+        and it’s now my favorite piece. Truly elegant and timeless.”
+      </p>
+      <div class="mt-6">
+        <h4 class="text-lg font-semibold text-[#1a2b3c]">Sara Ahmed</h4>
+        <p class="text-sm text-[#d3a48a]">Interior Designer</p>
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300">
+      <div class="mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#d3a48a" viewBox="0 0 24 24" class="w-10 h-10">
+          <path d="M7.17 6A5.17 5.17 0 002 11.17V18h7v-6H6.17A2.17 2.17 0 018 9.83V6h-.83zM18.83 6A5.17 5.17 0 0013 11.17V18h7v-6h-2.83A2.17 2.17 0 0118 9.83V6h.83z" />
+        </svg>
+      </div>
+      <p class="text-[#1a2b3c] italic text-lg leading-relaxed">
+        “I was amazed by the level of detail in my diamond pendant.  
+        The customer service was exceptional — they made me feel like royalty!”
+      </p>
+      <div class="mt-6">
+        <h4 class="text-lg font-semibold text-[#1a2b3c]">Anjali Kapoor</h4>
+        <p class="text-sm text-[#d3a48a]">Fashion Blogger</p>
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300">
+      <div class="mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#d3a48a" viewBox="0 0 24 24" class="w-10 h-10">
+          <path d="M7.17 6A5.17 5.17 0 002 11.17V18h7v-6H6.17A2.17 2.17 0 018 9.83V6h-.83zM18.83 6A5.17 5.17 0 0013 11.17V18h7v-6h-2.83A2.17 2.17 0 0118 9.83V6h.83z" />
+        </svg>
+      </div>
+      <p class="text-[#1a2b3c] italic text-lg leading-relaxed">
+        “Each jewellery piece I’ve purchased feels one of a kind.  
+        ABC Jewellery never fails to impress me with their originality and beauty.”
+      </p>
+      <div class="mt-6">
+        <h4 class="text-lg font-semibold text-[#1a2b3c]">Layla Hussain</h4>
+        <p class="text-sm text-[#d3a48a]">Luxury Consultant</p>
+      </div>
+    </div>
+  </div>
+</section>
+   <!-- testimonial end  -->
+
+    <!-- contact us start  -->
+    <section class="bg-[#f8f6f3] py-20 px-6 md:px-20" id="contact">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <!-- Left Side: Contact Info -->
+    <div>
+      <h2 class="text-4xl md:text-5xl font-serif text-[#1a2b3c] mb-6">
+        Get in <span class="text-[#d3a48a]">Touch</span>
+      </h2>
+      <p class="text-[#6c757d] mb-8 leading-relaxed">
+        Have a question or want to design your dream jewellery piece?  
+        Reach out to us — we’re here to help make your vision sparkle.
+      </p>
+
+      <div class="space-y-5">
+        <div class="flex items-center space-x-4">
+          <div class="w-10 h-10 flex items-center justify-center rounded-full bg-[#d3a48a]/10 text-[#d3a48a]">
+            <i class="fas fa-phone-alt text-lg"></i>
+          </div>
+          <p class="text-[#1a2b3c] font-medium">+1 (234) 567-8900</p>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <div class="w-10 h-10 flex items-center justify-center rounded-full bg-[#d3a48a]/10 text-[#d3a48a]">
+            <i class="fas fa-envelope text-lg"></i>
+          </div>
+          <p class="text-[#1a2b3c] font-medium">info@abcjewellery.com</p>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <div class="w-10 h-10 flex items-center justify-center rounded-full bg-[#d3a48a]/10 text-[#d3a48a]">
+            <i class="fas fa-map-marker-alt text-lg"></i>
+          </div>
+          <p class="text-[#1a2b3c] font-medium">
+            123 Elegance Street, Diamond Plaza,<br /> New York, USA
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <div class="bg-white shadow-lg rounded-2xl p-8 border border-[#e6dcd1]">
+      <h3 class="text-2xl font-semibold text-[#1a2b3c] mb-6">Send us a Message</h3>
+      <form class="space-y-5">
+        <div>
+          <label class="block text-[#1a2b3c] text-sm mb-2">Full Name</label>
+          <input
+            type="text"
+            class="w-full border border-[#e6dcd1] rounded-lg px-4 py-3 text-[#1a2b3c] focus:outline-none focus:border-[#d3a48a] transition"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="block text-[#1a2b3c] text-sm mb-2">Email Address</label>
+          <input
+            type="email"
+            class="w-full border border-[#e6dcd1] rounded-lg px-4 py-3 text-[#1a2b3c] focus:outline-none focus:border-[#d3a48a] transition"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="block text-[#1a2b3c] text-sm mb-2">Message</label>
+          <textarea
+            rows="4"
+            class="w-full border border-[#e6dcd1] rounded-lg px-4 py-3 text-[#1a2b3c] focus:outline-none focus:border-[#d3a48a] transition"
+            placeholder="Type your message here..."
+            required
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-[#d3a48a] text-white py-3 rounded-lg font-medium hover:bg-[#c9977d] transition-all"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+    <!-- contact us end  -->
+   
+   <!-- footer start  -->
+  <footer class="bg-[#f8f6f3] border-t border-[#e6dcd1] pt-16 pb-8 px-6 md:px-20">
+  <div class="grid md:grid-cols-4 gap-10">
+    <!-- Brand -->
+    <div>
+      <h2 class="text-3xl font-serif text-[#1a2b3c] mb-2">
+        ABC <span class="text-[#d3a48a]">Jewellery</span>
+      </h2>
+      <p class="text-[#6c757d] text-sm leading-relaxed">
+        Timeless elegance, crafted with love. <br />
+        Every piece tells a story of grace and beauty.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-lg font-semibold text-[#1a2b3c] mb-4">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="text-[#6c757d] hover:text-[#d3a48a] transition-colors duration-300">Home</a></li>
+        <li><a href="#" class="text-[#6c757d] hover:text-[#d3a48a] transition-colors duration-300">Collections</a></li>
+        <li><a href="#" class="text-[#6c757d] hover:text-[#d3a48a] transition-colors duration-300">About Us</a></li>
+        <li><a href="#" class="text-[#6c757d] hover:text-[#d3a48a] transition-colors duration-300">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-lg font-semibold text-[#1a2b3c] mb-4">Get in Touch</h3>
+      <p class="text-[#6c757d] text-sm mb-3">
+        Have a question or need assistance? We’d love to hear from you.
+      </p>
+      <p class="text-[#1a2b3c] font-medium">
+        📞 <span class="text-[#d3a48a]">+1 (234) 567-8900</span>
+      </p>
+      <p class="text-[#6c757d] text-sm mt-1">Mon–Sat: 10 AM – 7 PM</p>
+      <p class="text-[#6c757d] text-sm">info@abcjewellery.com</p>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <h3 class="text-lg font-semibold text-[#1a2b3c] mb-4">Stay in Touch</h3>
+      <p class="text-[#6c757d] text-sm mb-4">
+        Subscribe to receive updates on new collections & exclusive offers.
+      </p>
+      <form class="flex items-center bg-white rounded-full overflow-hidden shadow-sm">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="w-full px-4 py-2 text-sm text-[#1a2b3c] focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="bg-[#d3a48a] text-white px-4 py-2 text-sm font-semibold hover:bg-[#c9977d] transition-all"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="border-t border-[#e6dcd1] mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
+    <!-- Social Icons -->
+    <div class="flex space-x-5 mb-4 md:mb-0">
+      <a href="#" class="text-[#6c757d] hover:text-[#d3a48a] transition-colors duration-300">
+        <i class="fab fa-facebook-f text-xl"></i>
+      </a>
+      <a href="#" class="text-[#6c757d] hover:text-[#d3a48a] transition-colors duration-300">
+        <i class="fab fa-instagram text-xl"></i>
+      </a>
+      <a href="#" class="text-[#6c757d] hover:text-[#d3a48a] transition-colors duration-300">
+        <i class="fab fa-pinterest text-xl"></i>
+      </a>
+      <a href="#" class="text-[#6c757d] hover:text-[#d3a48a] transition-colors duration-300">
+        <i class="fab fa-twitter text-xl"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-[#6c757d] text-sm text-center">
+      © 2025 <span class="text-[#d3a48a] font-medium">ABC Jewellery</span>. All rights reserved.
+    </p>
+  </div>
+</footer>
+    <!-- footer end  -->
+
+    <script src="main.js"></script>
+    <!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a2e0e6f3c3.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
