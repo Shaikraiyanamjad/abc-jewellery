@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>jewellery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Ho1J3vJ4hk2a3mXqAqH0fLb8yxNkONzr6rF6eK4R7zov9m0Jj45gV0w1+cwGvLQpH+UGFf4pWvwp6qu1yFmj+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body class="bg-[#f6f4f2]">
     <!-- navbar start -->
-   <section class="w-full bg-[#f8f6f3] shadow-sm">
+ <section class="w-full bg-[#f8f6f3] shadow-sm">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     <!-- Logo -->
     <div class="text-2xl font-serif italic text-[#d4a98b]">
@@ -18,11 +20,19 @@
     </div>
 
     <!-- Desktop Menu -->
-    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
-      <a href="#" class="hover:text-[#d4a98b] transition">Trending</a>
-      <a href="#" class="hover:text-[#d4a98b] transition">Collection</a>
-      <a href="#" class="hover:text-[#d4a98b] transition">Testimonials</a>
-      <a href="#" class="hover:text-[#d4a98b] transition">Contact Us</a>
+    <nav class="hidden md:flex items-center space-x-8 text-gray-700 font-medium">
+      <div class="flex space-x-8">
+        <a href="#" class="hover:text-[#d4a98b] transition-colors duration-300">Trending</a>
+        <a href="#" class="hover:text-[#d4a98b] transition-colors duration-300">Collection</a>
+        <a href="#" class="hover:text-[#d4a98b] transition-colors duration-300">Testimonials</a>
+        <a href="#" class="hover:text-[#d4a98b] transition-colors duration-300">Contact Us</a>
+      </div>
+      <!-- Social Icons -->
+      <div class="flex space-x-4 ml-6">
+        <a href="#" class="text-gray-700 hover:text-[#d4a98b] transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-gray-700 hover:text-[#d4a98b] transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-gray-700 hover:text-[#d4a98b] transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+      </div>
     </nav>
 
     <!-- Mobile Menu Button -->
@@ -36,15 +46,22 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-[#f8f6f3] border-t border-gray-200">
-    <nav class="flex flex-col space-y-3 px-6 py-4 text-gray-700 font-medium">
-      <a href="#" class="hover:text-[#d4a98b] transition">Trending</a>
-      <a href="#" class="hover:text-[#d4a98b] transition">Collection</a>
-      <a href="#" class="hover:text-[#d4a98b] transition">Testimonials</a>
-      <a href="#" class="hover:text-[#d4a98b] transition">Contact Us</a>
-    </nav>
+<div id="mobile-menu" class="hidden md:hidden bg-[#fff8f0] border-t border-[#d4a98b] origin-top">
+  <nav class="flex flex-col space-y-3 px-6 py-4 text-[#555] font-medium">
+    <a href="#" class="mobile-link opacity-0 translate-y-2 hover:text-[#d4a98b] transition-colors duration-300">Trending</a>
+    <a href="#" class="mobile-link opacity-0 translate-y-2 hover:text-[#d4a98b] transition-colors duration-300">Collection</a>
+    <a href="#" class="mobile-link opacity-0 translate-y-2 hover:text-[#d4a98b] transition-colors duration-300">Testimonials</a>
+    <a href="#" class="mobile-link opacity-0 translate-y-2 hover:text-[#d4a98b] transition-colors duration-300">Contact Us</a>
+  </nav>
+  <!-- Social Icons for Mobile -->
+  <div class="flex space-x-4 px-6 pb-4 social-icons opacity-0 translate-y-2">
+    <a href="#" class="text-gray-700 hover:text-[#d4a98b] transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="text-gray-700 hover:text-[#d4a98b] transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="text-gray-700 hover:text-[#d4a98b] transition-colors duration-300"><i class="fab fa-twitter"></i></a>
   </div>
+</div>
 </section>
+
     <!-- navbar end -->
 
     <!-- hero section start -->
@@ -73,7 +90,7 @@
     <!-- hero section end -->
 
     <!-- about us section start -->
-     <section class="py-20 px-8 lg:px-24 xl:px-36">
+     <section class="py-20 px-8 lg:px-24 xl:px-36 bg-[#fff8f0]">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
     
     <!-- Image Section -->
@@ -169,7 +186,7 @@
     <!-- featured products section end -->
 
     <!-- products section start -->
-     <section class="bg-[#f8f6f3] py-20 px-6 md:px-12 lg:px-20">
+     <section class="bg-[#fff8f0] py-20 px-6 md:px-12 lg:px-20">
   <div class="max-w-7xl mx-auto text-center mb-14">
     <p class="text-sm tracking-widest uppercase text-[#d3a48a] font-medium mb-2">Our Collection</p>
     <h2 class="text-4xl md:text-5xl font-serif text-[#1a2b3c] mb-4">
@@ -321,7 +338,7 @@
     <!-- youth section end -->
 
     <!-- blog section start -->
-    <section class="bg-[#f8f6f3] py-20 px-6 md:px-20">
+    <section class="bg-[#fff8f0] py-20 px-6 md:px-20">
   <!-- Section Header -->
   <div class="text-center mb-14">
     <p class="text-sm uppercase tracking-widest text-[#d3a48a] font-medium">Our Journal</p>
@@ -460,7 +477,7 @@
    <!-- testimonial end  -->
 
     <!-- contact us start  -->
-    <section class="bg-[#f8f6f3] py-20 px-6 md:px-20" id="contact">
+    <section class="bg-[#fff8f0] py-20 px-6 md:px-20" id="contact">
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
     <!-- Left Side: Contact Info -->
     <div>
